@@ -1,15 +1,44 @@
-@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
-@import url('https://fonts.googleapis.com/css?family=Bungee+Shade');
+$color-primary: #f8f8f8;
+$color-secondary: #ff4ecd;
 
+body {
+    justify-content: center;
+}
+form {
+    width: 100%;
+    color: $color-primary;
+    // background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5em;
+}
+form label {
+    font-family: 'Press Start 2P', cursive;
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin: 1rem 2em;
+}
+form input {
+    width: 60%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.container {
+    width: 80%;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+}
 h1.neon-sign {
     font-size: 3rem;
-    color: #ff007f;
-    text-shadow:
-        0 0 5px #ff007f,
-        0 0 10px #ff007f,
-        0 0 20px #ff007f,
-        0 0 40px #ff007f,
-        0 0 80px #ff007f;
     animation: pulseNeon 2s infinite alternate;
     text-align: center;
     margin: 2rem 0;
@@ -18,16 +47,17 @@ h1.neon-sign {
 .card {
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 0, 255, 0.2);
-    box-shadow: 0 0 20px rgba(255, 0, 255, 0.1);
     padding: 1.5rem;
+    width: 60%;
+    transform: scale(0.6);
     border-radius: 12px;
-    backdrop-filter: blur(8px);
     transition: all 0.3s ease-in-out;
+    margin-bottom: 100vh;
 
     overflow-y: hidden;
     &:hover {
         box-shadow: 0 0 30px rgba(255, 0, 255, 0.3);
-        transform: scale(1.02);
+        transform: scale(0.7);
     }
 }
 
@@ -60,13 +90,14 @@ body {
     font-size: var(--f);
     display: flex;
     margin: 0;
+    background-color: transparent;
 }
 
 h1.neon-sign {
     flex: 1;
     line-height: .75;
     margin: auto;
-    color: #1af0dc;
+    color: $color-primary;
     text-align: center;
     transform: scaleX(var(--scale, 1));
     animation: glitch-p 11s infinite alternate;
@@ -93,7 +124,7 @@ h1.neon-sign {
         filter: drop-shadow(0 0 transparent);
 
         text-shadow: calc(var(--left) * -3em) 0 .02em lime,
-            calc(var(--left) * -6em) 0 .02em #ff00e1;
+            calc(var(--left) * -6em) 0 .02em $color-secondary;
 
         // background-color: var(--bg);
         clip-path: polygon(0% var(--t-cut), 100% var(--t-cut), 100% var(--b-cut), 0% var(--b-cut));

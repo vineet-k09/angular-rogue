@@ -3,43 +3,26 @@
 *::before {
     box-sizing: border-box;
     overflow: hidden;
+    cursor: none;
 }
+
+$color-primary: #f8f8f8;
+$color-secondary: #ff4ecd;
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Pacifico&family=Zeyada&family=Kalam:wght@300&display=swap');
 
 a {
     cursor: none;
+    text-decoration: none;
+    color: $color-secondary;
+    &:hover {
+            color: $color-primary;
+        }
 }
+
 body {
-    background: linear-gradient(135deg, #000000, #1b114f, #301866, #49072e, #0a0a1f);
-    background-size: 500% 500%;
-    background-attachment: fixed;
-    animation: gradientShift 25s ease infinite;
-    color: #f8f8f8;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Kalam', 'Orbitron', cursive, sans-serif;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-}
-
-@keyframes gradientShift {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-a {
-    color: #ff4ecd;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-
-    &:hover {
-        color: #ffffff;
-    }
+    color: $color-primary;
 }

@@ -74,5 +74,4 @@ ng g c header
 routerlink specifies to work withing the angular app
 href tells to work on the client side it self
 
-
-Thanks to Christian Peter [For glitch text](https://codepen.io/cbp)
+ng g s services/food/food

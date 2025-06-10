@@ -1,17 +1,15 @@
-<body>
 <header>
     <div class="container">
-        <a [routerLink]="'/'" class="logo">MySite</a>
+        <a [routerLink]="'/'" class="logo">Welcome</a>
+        <nav>
+            <ul>
+                <li>
+                    <a [routerLink]="'/'" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+                </li>
+                <li>
+                    <a [routerLink]="'/feedback'" routerLinkActive="active">Feedback</a>
+                </li>
+            </ul>
+        </nav>
     </div>
-    <nav>
-        <ul>
-            <li>
-                <a [routerLink]="'/'" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
-            </li>
-            <li>
-                <a [routerLink]="'/feedback'" routerLinkActive="active">Feedback</a>
-            </li>
-        </ul>
-    </nav>
 </header>
-</body>
