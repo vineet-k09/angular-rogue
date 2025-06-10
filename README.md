@@ -57,3 +57,22 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+ng new angular-rogue
+angular routing yes
+scss
+
+serve ng server -o
+or npm run start
+
+ng generate component header
+ng g c header
+
+
+<a href="#" routerLink="/" class="logo"></a>
+routerlink specifies to work withing the angular app
+href tells to work on the client side it self
+
+
+Thanks to Christian Peter [For glitch text](https://codepen.io/cbp)
